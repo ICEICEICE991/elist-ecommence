@@ -3,4 +3,12 @@
 
 Analyzing Elist from 2019-2022. An interactive Tableau dashboard's link is [here](https://public.tableau.com/app/profile/libang.xia/viz/ElistE-CommerceOverview/Dashboard1).
 
-#
+# Project Summary
+
+Project Summary
+Part 1: Trends (Excel)
+Part 2: Targeted Insights (SQL)
+Part 3: Visualizations (Tableau)
+Part 4: Recommendations & Next Steps
+Addendum: Notes on Data Cleaning
+  
