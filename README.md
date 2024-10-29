@@ -53,4 +53,44 @@ The data are four tables and consists of information on orders, order statuses, 
 
 You can view the data in greater detail [here](https://github.com/sean-atkinson/elist_ecommerce_analysis/tree/main/data).
 <a id='section_2'></a>
-  
+
+
+ # Part 1: Exploratory Data Analysis (Excel)
+[(Back to table of contents)](#table_of_contents)<br><br>
+<b>Summary of Trends</b>:
+
+**Sales Trend Analysis**:
+   - Created a pivot table to show sales trends monthly.
+   - Analyzed **Year-over-Year (YoY)** and **Month-over-Month (MoM)** growth rates.
+   - Visualized trends using line charts to display revenue fluctuations over time.
+
+<b>Yearly</b>
+- Interestingly, the first year of the pandemic (2020) saw the highest average order value of $298.
+- Total orders were down to 19K in 2022 (from 31k in 2021).
+- Revenue was down 44% year-over-year in 2022.
+-  The concerning sales numbers of 2022 appear to reflect broader trends in the e-commerce industry. Factors such as the economic recession, an oversaturated market, decreased effectiveness of marketing campaigns, and supply chain issues were [identified by Statista](https://www.statista.com/chart/27982/e-commerce-revenue-and-forecasts/?ssp=1&setlang=en-CA&safesearch=moderate) as contributors to an unprecedented forecasted shrink in e-commerce revenue for 2022. Particularly notable were changes in digital marketing practices: [the privacy update in Apple's iOS 14.5, alongside a 47% increase in Facebook advertising costs](https://www.forbes.com/sites/forbestechcouncil/2022/03/14/e-commerce-trends-2022-what-the-future-holds/?ssp=1&setlang=en-CA&safesearch=moderate&sh=6ca444d258da), seems to have had a profound impact on e-commerce merchants.
+
+<b>Seasonality</b>
+- Winter and spring tend to perform better, most likely due to holiday sales and special promotions.
+- There's a noticeable sales uptick in the first half of 2020, most likely due to the pandemic.
+
+<b>Products</b>
+- Airpods have consistently been our best-selling product in terms of total orders. 
+- In 2022, Airpods and a gaming monitor made up a whopping 68% of all orders.
+- Bose Soundsport Headphones have consistently performed poorly. We've only sold 25 pairs over 3 years.
+
+<b>Loyalty Program</b>
+- We recommend continuing to expand this. When the program started in 2019, members were spending an average of $29 less than non-members. In 2022, loyalty program members now spend an average of $34 more than non-members per purchase.
+- By the end of 2022, loyalty program members generated 27% more revenue compared to non-members. This is largely attributed to their higher receptiveness to our marketing efforts. The fact that they are loyalty members makes them more open to receiving emails from us, as demonstrated by spending 217% more than non-members through that channel in 2022. It's worth noting that email marketing boasts a [47x ROI](https://cxl.com/blog/email-marketing-strategy/) and has remained relatively unaffected by changes in the marketing landscape.<br>
+
+
+<b>Technical Analysis:</b><br>
+For this section, I used Pivot Tables, conditional formatting, aggregation functions, and statistical analysis to clean, analyze, and summarize my insights for the finance and product teams.
+
+Here is an example of the pivot table used for seasonality insights:
+
+<img width="750" alt="Excel pivot table showing totals and growth rates for monthly sales, AOV, and orders" src="https://imgur.com/Uns8sPD.png">
+
+You can find more detailed analysis in [this downloadable Excel workbook](https://github.com/sean-atkinson/elist_ecommerce_analysis/blob/main/excel/elist_orders_case_study.xlsx).
+
+<a id='section_3'></a>
