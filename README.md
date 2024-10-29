@@ -31,20 +31,23 @@ In this project, I analyzed a dataset to investigate trends and growth rates in 
 
 This project consists of four parts:
 - <b>Part 1: Trends</b>
-  * Using Excel, I take a high-level look at some of the broad trends within the data to see what notable insights can be pulled out for the finance and product team.
+  * Using Excel, I spend a limited time taking a quick look at some of the broad trends within the data to see what notable insights can be pulled  for the finance and product team. and determine which section need using more time and more complicated the tool like python and sql
+  * 
 - <b>Part 2: Targeted Insights</b>
 
-  * With the aid of SQL, I pull out more targeted insights for the finance and marketing team, highlighting things like MacBook sales, refund rates, and best performing marketing channels.
+  * With the aid of SQL, I capture more detail and more insight for my team include finance an marketing  I pull out more targeted insights for the finance and marketing team, highlighting things like MacBook sales, refund rates, and best performing marketing channels.
 
 - <b>Part 3: Visualizations</b>
-  * Leveraging Tableau, I create a dashboard for the finance and product teams (as well as the sales and operations teams to a lesser extent) to monitor metrics of interest on an ongoing basis.
+  * Leveraging Tableau, I create a interactive dashboard for the finance and product teams (as well as the sales and operations teams to a lesser extent) to monitor metrics of interest on an ongoing basis.
 
 - <b>Part 4: Recommendations & Next Steps</b>
-  * Suggestions on things to take a look at going forward.
+  * Suggestions on things to take a look at going forward, report to the senior, and recommend more insight to my senior manager.
 
-The data I'll be using is spread out across four tables and consists of information on orders, order statuses, customers, and geographic information.
 
+# Data Structure & Initial Checks
 Here is the Entity Relationship Diagram:
+The data are four tables and consists of information on orders, order statuses, customers, and geographic information.
+
 
 <img width="750" alt="Entity Relationship Diagram showing orders, order statuses, customers, and geographic information tables" src="https://imgur.com/L3Fh37t.png">
 
