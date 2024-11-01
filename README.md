@@ -280,3 +280,22 @@ A copy of my Tableau workbook can be found [here](https://github.com/sean-atkins
 You can find more detailed analysis in [this downloadable Excel workbook](https://github.com/sean-atkinson/elist_ecommerce_analysis/blob/main/excel/elist_orders_case_study.xlsx).
 
 <a id='section_3'></a>
+# Part 4: Recommendations & Next Steps
+[(Back to table of contents)](#table_of_contents)<br><br>
+
+- - <b>Focus on Retaining Loyalty Members: Rather than solely expanding the loyalty program, prioritize retaining existing members, as acquiring new ones through channels outside of email is challenging. Enhancing member benefits could boost engagement and spending. We can take inspiration from Best Buy’s model, where loyalty members receive perks such as free two-day shipping and early access to limited-stock products. These benefits not only encourage repeat purchases but also generate additional revenue through membership fees.
+
+- <b>Expand Revenue-Generating Product Lines: With computer hardware and Apple products accounting for 70% of sales and 80% of orders, consider diversifying our product assortment within these high-performing categories. Adding more computer hardware options could capture more market share and increase overall revenue.
+
+- <b>Introduce Additional Services for Hardware Products: For high-value items like Apple products and computer hardware, consider offering services such as AppleCare, extended warranties, free repairs, or screen replacements. These add-ons could improve customer satisfaction and foster loyalty, especially given the significance of hardware sales to our business.
+
+- <b>Reevaluate Low-Performing Products: Bose headphones and iPhones contribute only 1% of total sales. To boost their performance, consider bundling these products with other items or offering flash sales targeting customers outside the Apple ecosystem. For example, market noise-canceling Bose headphones to frequent travelers or offer promotions like “Buy a Laptop, Get a Free Bose Headphone” to encourage purchases.
+
+- <b>Integrate Key Financial Metrics into Product Analysis: To gain a clearer picture of profitability, incorporate metrics such as customer acquisition costs and cost of goods sold (COGS) into our analysis. This will help us calculate customer lifetime value (LTV) and identify which products drive the highest net profits. Insights from this analysis could help us reverse declining sales by focusing on the most profitable products.
+
+- <b>Investigate Shipping Volatility: Analyze the fluctuations in shipping times, especially for iPhones and Bose headphones. If the shipping volatility is impacting customer satisfaction and sales, consider whether replacing these products with others that better align with our top customer segments would be more beneficial.
+
+<a id='section_6'></a>
+# Addendum: Notes on Data Cleaning
+[(Back to table of contents)](#table_of_contents)<br><br>
+Please note that as a part of the data cleaning stage, 15,200 entries were identified as duplicates in the initial Excel data. To maintain the integrity and reliability of my insights, these duplicates were removed from the final dataset used for my analysis. Therefore, the original list of entries, which initially consisted of 108,127 entries, was reduced to 92,927 after removing the identified duplicates. This decision was essential to ensure the validity of the observations made for this project.
