@@ -94,6 +94,45 @@ For this section, I used Pivot Tables, lookup function, conditional formatting, 
 Here is an example of the pivot table used for seasonality insights:
 
 <img width="750" alt="Excel pivot table showing totals and growth rates for monthly sales, AOV, and orders" src="https://imgur.com/Uns8sPD.png">
+# Part 3: Visualizations (Tableau)
+[(Back to table of contents)](#table_of_contents)<br><br>
+
+<b>Summary of Insights:</b>
+
+<b>Orders</b>
+- Airpods, Gaming monitors, and Macbook Air have accounted for over 80% of all orders from 2019-2022.
+- Every product except webcams, and charging caple packs saw its total orders peak around the start of the pandemic. Paradoxically, total orders for webcams rose in the following years. This is something we should investigate further.
+
+<b>Sales by Region</b>
+- top 3 region are the unite state , Canada, and Great British, we can see that Elish Ecommerce focus on americam
+-  we have more change to explore the Asia and Africa region
+-  intesrting thing the top 3 aov country are not amrican state coutyr which are AO,PG,YE
+-  • North America grew in importance in 2022, increasing revenue share to 55% and order share to 53% among known region sales.
+• Sales and average order value (AOV) fell across all regions in 2022. North America remains the largest AOV with $242,39% above Latin America, the lowest performer.
+• Europe, the Middle East, and Africa saw a significant increase in order volume share in 4Q22, climbing from 26% to 33% quarter-over-quarter among known region sales.
+-
+- 
+
+<b>Shipping times</b>
+- iphone and bose have latest day to ship to the customer,the aveage of those product shipday are 6 days. unlikeyly airpod 3.5days
+- iPhones and Bose headphones have, relative to all other products, incredibly high variability when it comes to shipping times. One might wonder if this is a chicken and egg situation, considering their sales. Are the shipping times for iPhones and Bose headphones all over the place because we rarely sell them (and consequently don't have much stock on hand)? Or do we rarely sell iPhones and Bose headphones because customers find our shipping times to be too unpredictable?  
+
+
+
+<b>Technical Analysis:</b><br>
+In this section, I primarily used Tableau. SQL and BigQuery were also used to create a dataset for Tableau. My Tableau dashboard incorporates filters, tables, line graphs, and area charts.
+
+You can find the SQL code for the dataset I created in BigQuery [here](https://github.com/sean-atkinson/elist_ecommerce_analysis/blob/main/sql/elist_dataset_tableau_query.sql).
+
+Here is a peek of what the Tableau dashboard for this part of my analysis looks like:
+
+<img width="750" alt="Tableau dashboard showing tables, line graphs, and area charts for total sales, total orders, and average time to ship" src="https://imgur.com/DpPG33J.png">
+
+An interactive version of the above Tableau dashboard can be found [here](https://public.tableau.com/app/profile/sean.atkinson/viz/ElistOrdersDashboard_16896324404540/ordersdashboard).
+
+A copy of my Tableau workbook can be found [here](https://github.com/sean-atkinson/elist_ecommerce_analysis/tree/main/tableau).
+
+<a id='section_5'></a>
 
 You can find more detailed analysis in [this downloadable Excel workbook](https://github.com/sean-atkinson/elist_ecommerce_analysis/blob/main/excel/elist_orders_case_study.xlsx).
 
