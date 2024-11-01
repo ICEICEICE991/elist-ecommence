@@ -65,27 +65,31 @@ You can view the data in greater detail [here](https://github.com/sean-atkinson/
    - Visualized trends using line charts to display revenue fluctuations over time.
 
 <b>Yearly</b>
-- Interestingly, the first year of the pandemic (2020) saw the highest average order value of $298.
-- Total orders were down to 19K in 2022 (from 31k in 2021).
-- Revenue was down 44% year-over-year in 2022.
--  The concerning sales numbers of 2022 appear to reflect broader trends in the e-commerce industry. Factors such as the economic recession, an oversaturated market, decreased effectiveness of marketing campaigns, and supply chain issues were [identified by Statista](https://www.statista.com/chart/27982/e-commerce-revenue-and-forecasts/?ssp=1&setlang=en-CA&safesearch=moderate) as contributors to an unprecedented forecasted shrink in e-commerce revenue for 2022. Particularly notable were changes in digital marketing practices: [the privacy update in Apple's iOS 14.5, alongside a 47% increase in Facebook advertising costs](https://www.forbes.com/sites/forbestechcouncil/2022/03/14/e-commerce-trends-2022-what-the-future-holds/?ssp=1&setlang=en-CA&safesearch=moderate&sh=6ca444d258da), seems to have had a profound impact on e-commerce merchants.
+- **Sales Surge in 2020**: Sales peaked in 2020, likely due to increased demand driven by the pandemic, which significantly impacted customer shopping behavior.
+- **December 2020 High**: December 2020 recorded the highest monthly revenue, reaching $8.63 million, with an average order value of 298, highlighting the impact of pandemic-related demand shifts on customer spending.
+- **Sustained Decline in 2021**: Orders continued to decline YoY for seven consecutive months in 2021. Revenue hit a historic low in November 2022, with the company generating just over $78K. While revenue slightly recovered in subsequent months, it followed typical holiday season patterns rather than indicating a robust recovery.
+-**Sharp Decline in 2022**:
+Order Volume: Total orders in 2022 were down to 18,964, a 40% decrease.
+Revenue: Year-over-year revenue dropped by 44% in 2022.
+Industry-Wide Downturn: The challenging sales figures in 2022 align with broader trends in the e-commerce industry. According to Statista, factors such as an economic downturn, market saturation, reduced marketing effectiveness, and supply chain disruptions contributed to an unprecedented contraction in e-commerce revenue forecasts for 2022.
 
 <b>Seasonality</b>
+- Sempter and october tend to perform excellent, most likely duo the Back to School season, student demand increasing.
 - Winter and spring tend to perform better, most likely due to holiday sales and special promotions.
 - There's a noticeable sales uptick in the first half of 2020, most likely due to the pandemic.
 
 <b>Products</b>
-- Airpods have consistently been our best-selling product in terms of total orders. 
-- In 2022, Airpods and a gaming monitor made up a whopping 68% of all orders.
+- Airpods and 4K gaming monitor have consistently been our best-selling product in terms of total orders. 
+- In 2022, Airpods and a gaming monitor made up around 70% of all orders.
 - Bose Soundsport Headphones have consistently performed poorly. We've only sold 25 pairs over 3 years.
 
 <b>Loyalty Program</b>
-- We recommend continuing to expand this. When the program started in 2019, members were spending an average of $29 less than non-members. In 2022, loyalty program members now spend an average of $34 more than non-members per purchase.
-- By the end of 2022, loyalty program members generated 27% more revenue compared to non-members. This is largely attributed to their higher receptiveness to our marketing efforts. The fact that they are loyalty members makes them more open to receiving emails from us, as demonstrated by spending 217% more than non-members through that channel in 2022. It's worth noting that email marketing boasts a [47x ROI](https://cxl.com/blog/email-marketing-strategy/) and has remained relatively unaffected by changes in the marketing landscape.<br>
+- We recommend continuing to expand this. When the program started in 2019, members were spending an average of $29 less than non-members. In 2022, loyalty program members now spend an average of $34 more and 9 percent total order more  than non-members per purchase.
+- By the end of 2022, loyalty program members generated 27% more revenue 10% more orders than non-members. This is largely attributed to their higher receptiveness to our marketing efforts. The fact that they are loyalty members makes them more open to receiving emails from us, as demonstrated by spending 217% more than non-members through that channel in 2022. via direct method 10% more than non-members through that channel in 2022. via social method 20% more than non-members through that channel in 2022. 
 
 
 <b>Technical Analysis:</b><br>
-For this section, I used Pivot Tables, conditional formatting, aggregation functions, and statistical analysis to clean, analyze, and summarize my insights for the finance and product teams.
+For this section, I used Pivot Tables, lookup function, conditional formatting, aggregation functions, and statistical analysis to clean, analyze, and summarize my insights for the finance and product teams.
 
 Here is an example of the pivot table used for seasonality insights:
 
