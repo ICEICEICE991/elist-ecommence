@@ -123,6 +123,65 @@ Here is an example of the pivot table used for seasonality insights:
 <b>Technical Analysis:</b><br>
 For this analysis, I used SQL and BigQuery. In regards to SQL, I used aggregation functions, window functions, joins, filtering, CASE expressions, common table expressions (CTEs), and in a couple instances the QUALIFY clause to use row_number() to filter results.
 
+<b>Lifetime Value (LTV) Analysis by Customer Segment:</b><br>
+
+Objective: Identify high-value customer segments to help marketing and customer success teams focus retention efforts.
+
+Insights:
+Identify segments with the highest LTV.
+Share with the Marketing Team to tailor retention and upsell strategies.
+Share with the Customer Success Team to prioritize high-value segments for personalized support.
+
+<b>Customer Churn Analysis:</b><br>
+
+Objective: Determine churn rate by analyzing customers who have not made a purchase within a specified period (e.g., past 6 months).
+SQL Analysis:
+Identify inactive customers based on the time since their last purchase:
+
+Insights:
+Calculate churn rate and identify customers at risk of churning.
+Share with the Retention Team to run re-engagement campaigns.
+
+<b>Average Order Value (AOV) by Marketing Channel:</b><br>
+
+Objective: Compare AOV across marketing channels to optimize marketing spend.
+
+Insights:
+Identify channels with the highest AOV, which may justify a higher marketing spend.
+Share with the Marketing Team to allocate budgets more effectively.
+
+<b>Product Sales Performance by Region:</b><br>
+
+Objective: Identify top-performing products in each region to inform regional inventory and marketing strategies.
+SQL Analysis:
+Calculate total sales and units sold per product by region:
+
+Insights:
+Highlight which products perform best in each region.
+Share with Regional Marketing and Inventory Teams to stock and promote products according to regional demand.
+
+<b>Repeat Purchase Rate:</b><br>
+
+Objective: Measure repeat purchase rates to understand customer loyalty and retention.
+SQL Analysis:
+Calculate the percentage of customers with more than one order:
+
+Insights:
+Determine the overall repeat purchase rate.
+Share with Customer Success and Marketing Teams to develop loyalty programs or re-engagement strategies for one-time buyers.
+
+<b>Time to Fulfillment Analysis:</b><br>
+
+Objective: Measure the average time from purchase to delivery and identify delays in the fulfillment process.
+SQL Analysis:
+Calculate the time (in days) between order and delivery dates:
+
+Insights:
+Identify any patterns in delayed orders and share with the Operations Team.
+Track which regions or products experience delays to optimize logistics.
+
+
+
 You can find my SQL queries [here](https://github.com/sean-atkinson/elist_ecommerce_analysis/blob/main/sql/elist_sales_trends_queries.sql).
 
 Here is an example of a query result that uses the aforementioned qualify clause:
