@@ -271,9 +271,9 @@ Here is a peek of what the Tableau dashboard for this part of my analysis looks 
 
 <img width="750" alt="Tableau dashboard showing tables, line graphs, and area charts for total sales, total orders, and average time to ship" src="https://imgur.com/DpPG33J.png">
 
-An interactive version of the above Tableau dashboard can be found [here](https://public.tableau.com/app/profile/sean.atkinson/viz/ElistOrdersDashboard_16896324404540/ordersdashboard).
+An interactive version of the above Tableau dashboard can be found [here](https://public.tableau.com/app/profile/libang.xia/viz/ElistE-CommerceOverview/Dashboard1).
 
-A copy of my Tableau workbook can be found [here](https://github.com/sean-atkinson/elist_ecommerce_analysis/tree/main/tableau).
+A copy of my Tableau workbook can be found [here](https://public.tableau.com/app/profile/libang.xia/viz/ElistE-CommerceOverview/Dashboard1).
 
 <a id='section_5'></a>
 
