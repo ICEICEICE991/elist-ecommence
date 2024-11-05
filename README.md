@@ -93,7 +93,10 @@ For this section, I used Pivot Tables, lookup function, conditional formatting, 
 
 Here is an example of the pivot table used for seasonality insights:
 
-<img width="750" alt="Excel pivot table showing totals and growth rates for monthly sales, AOV, and orders" src="https://imgur.com/Uns8sPD.png">
+
+### Excel Pivot Table Showing Totals and Growth Rates for Monthly Sales, AOV, and Orders
+
+<img width="686" alt="Excel pivot table showing totals and growth rates for monthly sales, AOV, and orders" src="https://github.com/user-attachments/assets/5bb8b2b7-8157-4aed-a06c-a221e416eb73">
 
 
 # Part 2: Targeted Insights (SQL)
