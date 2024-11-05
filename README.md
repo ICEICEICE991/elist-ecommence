@@ -49,7 +49,7 @@ Here is the Entity Relationship Diagram:
 The data are four tables and consists of information on orders, order statuses, customers, and geographic information.
 
 
-<img width="750" alt="Entity Relationship Diagram showing orders, order statuses, customers, and geographic information tables" src="https://imgur.com/L3Fh37t.png">
+<img width="750" alt="Entity Relationship Diagram showing orders, order statuses, customers, and geographic information tables" src="<img width="1039" alt="Screenshot 2024-10-29 at 3 51 03 PM" src="https://github.com/user-attachments/assets/65f1e09b-af4f-4a3e-b911-a5df79e5b9fe">
 
 You can view the data in greater detail [here](https://github.com/sean-atkinson/elist_ecommerce_analysis/tree/main/data).
 <a id='section_2'></a>
