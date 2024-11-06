@@ -191,13 +191,16 @@ Here is an example of a query result that uses the aforementioned qualify clause
 ```sql
 -- Creating a brand category and totaling the amount of refunds per month
 -- Filtering to the year 2020
-WITH highest_num_refunds_cte AS (
+WITH refund_counts_cte AS (
     SELECT
         CASE
-            WHEN LOWER(orders.product_name) LIKE '%apple%' OR LOWER(orders.product_name) LIKE '%macbook%' THEN 'Apple'
+            WHEN LOWER(orders.product_name) LIKE '%airpod%'  THEN 'Airpod'
+            WHEN LOWER(orders.product_name) LIKE '%macbook%' THEN 'Macbook'
+            WHEN LOWER(orders.product_name) LIKE '%iphone%' THEN 'iPhone'
             WHEN LOWER(orders.product_name) LIKE '%samsung%' THEN 'Samsung'
             WHEN LOWER(orders.product_name) LIKE '%thinkpad%' THEN 'ThinkPad'
             WHEN LOWER(orders.product_name) LIKE '%bose%' THEN 'Bose'
+            WHEN LOWER(orders.product_name) LIKE '%monitor%' THEN 'Monitor'
             ELSE 'Unknown'
         END AS brand,
         DATE_TRUNC(order_status.refund_ts, MONTH) AS month,
@@ -207,32 +210,44 @@ WITH highest_num_refunds_cte AS (
     JOIN 
         elist.order_status AS order_status 
     ON 
-        orders.id = order_status.order_id
+        orders.id = order_status.id  -- Adjust the join to use 'id' instead of 'order_id'
     WHERE 
         EXTRACT(YEAR FROM order_status.refund_ts) = 2020
     GROUP BY 
-        1, 2
+        1, 2  -- Grouping by brand and month
+),
+-- Ranking refunds per brand to get the highest month per brand
+ranked_refunds_cte AS (
+    SELECT
+        brand,
+        month,
+        num_refunds,
+        ROW_NUMBER() OVER (PARTITION BY brand ORDER BY num_refunds DESC) AS rnk
+    FROM 
+        refund_counts_cte
 )
--- Getting the highest month and corresponding number of refunds for each brand in 2020 
+-- Selecting the highest refund month for each brand
 SELECT
     brand, 
     month, 
     num_refunds
 FROM 
-    highest_num_refunds_cte
-QUALIFY 
-    ROW_NUMBER() OVER (PARTITION BY brand ORDER BY num_refunds DESC) = 1
+    ranked_refunds_cte
+WHERE 
+    rnk = 1
 ORDER BY 
-    1;
+    brand;
+
 ```
 And here is its result:
-| brand    | month      |   num_refunds |
-|:---------|:-----------|--------------:|
-| Apple    | 2020-06-01 |            56 |
-| Samsung  | 2020-04-01 |             7 |
-| ThinkPad | 2020-04-01 |             9 |
-| Unknown  | 2020-05-01 |            25 |
-
+| brand    | month      | num_refunds |
+|----------|------------|-------------|
+| Airpod   | 2020-06-01 |          45 |
+| Macbook  | 2020-09-01 |          13 |
+| Monitor  | 2020-05-01 |          25 |
+| Samsung  | 2020-04-01 |           7 |
+| ThinkPad | 2020-04-01 |           9 |
+| iPhone   | 2020-09-01 |           1 |
 
 
 <a id='section_4'></a>
@@ -272,7 +287,8 @@ You can find the SQL code for the dataset I created in BigQuery [here](https://g
 
 Here is a peek of what the Tableau dashboard for this part of my analysis looks like:
 
-<img width="750" alt="Tableau dashboard showing tables, line graphs, and area charts for total sales, total orders, and average time to ship" src="https://imgur.com/DpPG33J.png">
+<img width="1076" alt="Screenshot 2024-11-06 at 2 16 02 PM" src="https://github.com/user-attachments/assets/1c135e76-f860-4812-a863-f090c5240073">
+
 
 An interactive version of the above Tableau dashboard can be found [here](https://public.tableau.com/app/profile/libang.xia/viz/ElistE-CommerceOverview/Dashboard1).
 
