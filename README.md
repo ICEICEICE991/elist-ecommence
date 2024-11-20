@@ -31,11 +31,11 @@ In this project, I analyzed a dataset to investigate trends and growth rates in 
 
 This project consists of four parts:
 - <b>Part 1: Trends</b>
-  * Using Excel, I spend a limited time taking a quick look at some of the broad trends within the data to see what notable insights can be pulled  for the finance and product team. and determine which section need using more time and more complicated the tool like python and sql
+  * Using Excel, I spend a limited time taking a quick look at some of the broad trends within the data to see what notable insights can be pulled  for the finance and product team. and determine which section need using more time and more complicated the tool like python and SQL
   * 
 - <b>Part 2: Targeted Insights</b>
 
-  * With the aid of SQL, I capture more detail and more insight for my team include finance an marketing  I pull out more targeted insights for the finance and marketing team, highlighting things like MacBook sales, refund rates, and best performing marketing channels.
+  * With the aid of SQL, I capture more detail and more insight for my team including finance an marketing  I pull out more targeted insights for the finance and marketing team, highlighting things like MacBook sales, refund rates, and best-performing marketing channels.
 
 - <b>Part 3: Visualizations</b>
   * Leveraging Tableau, I create a interactive dashboard for the finance and product teams (as well as the sales and operations teams to a lesser extent) to monitor metrics of interest on an ongoing basis.
@@ -51,7 +51,7 @@ The data are four tables and consists of information on orders, order statuses, 
 
 <img width="750" alt="Entity Relationship Diagram showing orders, order statuses, customers, and geographic information tables" src="<img width="1039" alt="Screenshot 2024-10-29 at 3 51 03 PM" src="https://github.com/user-attachments/assets/65f1e09b-af4f-4a3e-b911-a5df79e5b9fe">
 
-You can view the data in greater detail [here](https://github.com/sean-atkinson/elist_ecommerce_analysis/tree/main/data).
+You can view the data in greater detail [here](https://github.com/ICEICEICE991/elist_ecommerce_analysis/tree/main/data).
 <a id='section_2'></a>
 
 
@@ -185,7 +185,7 @@ Track which regions or products experience delays to optimize logistics.
 
 
 
-You can find my SQL queries [here](https://github.com/sean-atkinson/elist_ecommerce_analysis/blob/main/sql/elist_sales_trends_queries.sql).
+
 
 Here is an example of a query result that uses the aforementioned qualify clause:
 ```sql
@@ -283,7 +283,7 @@ And here is its result:
 <b>Technical Analysis:</b><br>
 In this section, I primarily used Tableau. SQL and BigQuery were also used to create a dataset for Tableau. My Tableau dashboard incorporates filters, tables, line graphs, and area charts.
 
-You can find the SQL code for the dataset I created in BigQuery [here](https://github.com/sean-atkinson/elist_ecommerce_analysis/blob/main/sql/elist_dataset_tableau_query.sql).
+
 
 Here is a peek of what the Tableau dashboard for this part of my analysis looks like:
 
