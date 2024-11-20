@@ -119,7 +119,7 @@ Here is an example of the pivot table used for seasonality insights:
 <b>Customer Onboarding and First Purchase Time Analysis (all years)</b>
 - Average of 51 days between account creation and first purchase.
 
-<b>Marketing channels (all years)<b>
+<b>Marketing channels (all years)</b>
 - Direct - highest number of orders.
 - Emails - second highest number of orders.
 
@@ -130,7 +130,7 @@ Here is an example of the pivot table used for seasonality insights:
 
 Objective: Identify high-value customer segments to help marketing and customer success teams focus retention efforts.
 
-<b>Insights:<b>
+<b>Insights:</b>
 -Identify segments with the highest LTV.
 -Share with the Marketing Team to tailor retention and upsell strategies.
 -Share with the Customer Success Team to prioritize high-value segments for personalized support.
@@ -141,7 +141,7 @@ Objective: Determine churn rate by analyzing customers who have not made a purch
 SQL Analysis:
 Identify inactive customers based on the time since their last purchase:
 
-Insights:
+<b>Insights:</b>
 -Calculate churn rate and identify customers at risk of churning.
 -Share with the Retention Team to run re-engagement campaigns.
 
