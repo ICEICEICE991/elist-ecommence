@@ -123,65 +123,57 @@ Here is an example of the pivot table used for seasonality insights:
 - Direct - highest number of orders.
 - Emails - second highest number of orders.
 
-<b>Technical Analysis:</b><br>
--For this analysis, I used SQL and BigQuery. In regards to SQL, I used aggregation functions, window functions, joins, filtering, CASE expressions, common table expressions (CTEs), and in a couple instances the QUALIFY -clause to use row_number() to filter results.
+### Technical Analysis
+- Used **SQL** and **BigQuery** with the following techniques:
+  - Aggregation functions
+  - Window functions
+  - Joins
+  - Filtering
+  - CASE expressions
+  - Common Table Expressions (CTEs)
+  - **QUALIFY** clause with `ROW_NUMBER()` for result filtering.
 
-<b>Lifetime Value (LTV) Analysis by Customer Segment:</b><br>
+### Lifetime Value (LTV) Analysis by Customer Segment
+**Objective:** Identify high-value customer segments to help marketing and customer success teams focus retention efforts.
+- **Insights:**
+  - Identify segments with the highest LTV.
+  - Share with the Marketing Team to tailor retention and upsell strategies.
+  - Share with the Customer Success Team to prioritize high-value segments for personalized support.
 
-Objective: Identify high-value customer segments to help marketing and customer success teams focus retention efforts.
+### Customer Churn Analysis
+**Objective:** Determine churn rate by analyzing customers who have not made a purchase within a specified period (e.g., past 6 months).
+- **SQL Analysis:** Identify inactive customers based on the time since their last purchase.
+- **Insights:**
+  - Calculate churn rate and identify customers at risk of churning.
+  - Share with the Retention Team to run re-engagement campaigns.
 
-<b>Insights:</b>
--Identify segments with the highest LTV.
--Share with the Marketing Team to tailor retention and upsell strategies.
--Share with the Customer Success Team to prioritize high-value segments for personalized support.
+### Average Order Value (AOV) by Marketing Channel
+**Objective:** Compare AOV across marketing channels to optimize marketing spend.
+- **Insights:**
+  - Identify channels with the highest AOV, justifying higher marketing spend.
+  - Share with the Marketing Team to allocate budgets more effectively.
 
-<b>Customer Churn Analysis:</b><br>
+### Product Sales Performance by Region
+**Objective:** Identify top-performing products in each region to inform regional inventory and marketing strategies.
+- **SQL Analysis:** Calculate total sales and units sold per product by region.
+- **Insights:**
+  - Highlight which products perform best in each region.
+  - Share with Regional Marketing and Inventory Teams to stock and promote products according to regional demand.
 
-Objective: Determine churn rate by analyzing customers who have not made a purchase within a specified period (e.g., past 6 months).
-SQL Analysis:
-Identify inactive customers based on the time since their last purchase:
+### Repeat Purchase Rate
+**Objective:** Measure repeat purchase rates to understand customer loyalty and retention.
+- **SQL Analysis:** Calculate the percentage of customers with more than one order.
+- **Insights:**
+  - Determine the overall repeat purchase rate.
+  - Share with Customer Success and Marketing Teams to develop loyalty programs or re-engagement strategies for one-time buyers.
 
-<b>Insights:</b>
--Calculate churn rate and identify customers at risk of churning.
--Share with the Retention Team to run re-engagement campaigns.
+### Time to Fulfillment Analysis
+**Objective:** Measure the average time from purchase to delivery and identify delays in the fulfillment process.
+- **SQL Analysis:** Calculate the time (in days) between order and delivery dates.
+- **Insights:**
+  - Identify patterns in delayed orders and share with the Operations Team.
+  - Track which regions or products experience delays to optimize logistics.
 
-<b>Average Order Value (AOV) by Marketing Channel:</b><br>
-
-Objective: Compare AOV across marketing channels to optimize marketing spend.
-
-Insights:
--Identify channels with the highest AOV, which may justify a higher marketing spend.
--Share with the Marketing Team to allocate budgets more effectively.
-
-<b>Product Sales Performance by Region:</b><br>
-
-Objective: Identify top-performing products in each region to inform regional inventory and marketing strategies.
-SQL Analysis:
-Calculate total sales and units sold per product by region:
-
-Insights:
--Highlight which products perform best in each region.
--Share with Regional Marketing and Inventory Teams to stock and promote products according to regional demand.
-
-<b>Repeat Purchase Rate:</b><br>
-
-Objective: Measure repeat purchase rates to understand customer loyalty and retention.
-SQL Analysis:
-Calculate the percentage of customers with more than one order:
-
-Insights:
--Determine the overall repeat purchase rate.
--Share with Customer Success and Marketing Teams to develop loyalty programs or re-engagement strategies for one-time buyers.
-
-<b>Time to Fulfillment Analysis:</b><br>
-
-Objective: Measure the average time from purchase to delivery and identify delays in the fulfillment process.
-SQL Analysis:
-Calculate the time (in days) between order and delivery dates:
-
-Insights:
--Identify any patterns in delayed orders and share with the Operations Team.
--Track which regions or products experience delays to optimize logistics.
 
 
 
@@ -261,22 +253,22 @@ And here is its result:
 <b>Summary of Insights:</b>
 
 <b>Orders</b>
-- Airpods, Gaming monitors, and Macbook Air have accounted for over 80% of all orders from 2019-2022.
+- Airpods, Gaming monitors, and Macbook Air have accounted for over 80% of all orders from 2019-2022,highlighting their dominance in product popularity.
 - Every product except webcams, and charging caple packs saw its total orders peak around the start of the pandemic. Paradoxically, total orders for webcams rose in the following years. This is something we should investigate further.
 
 <b>Sales by Region</b>
-- top 3 region are the unite state , Canada, and Great British, we can see that Elish Ecommerce focus on americam
--  we have more change to explore the Asia and Africa region
--  intesrting thing the top 3 aov country are not amrican state coutyr which are AO,PG,YE
--  • North America grew in importance in 2022, increasing revenue share to 55% and order share to 53% among known region sales.
-• Sales and average order value (AOV) fell across all regions in 2022. North America remains the largest AOV with $242,39% above Latin America, the lowest performer.
-• Europe, the Middle East, and Africa saw a significant increase in order volume share in 4Q22, climbing from 26% to 33% quarter-over-quarter among known region sales.
--
-- 
+- The top three regions for sales are the United States, Canada, and Great Britain, indicating a strong focus on the American and Western markets by Elish Ecommerce.
+- There is significant potential to explore untapped markets in Asia and Africa, where expansion could drive future growth.
+- Interestingly, the top three countries with the highest AOV (Average Order Value) are not American countries but rather Angola (AO), Papua New Guinea (PG), and Yemen (YE).
+-  North America grew in importance in 2022, increasing revenue share to 55% and order share to 53% among known region sales.
+- Sales and average order value (AOV) fell across all regions in 2022. North America remains the largest AOV with $242,39% above Latin America, the lowest performer.
+- Europe, the Middle East, and Africa saw a significant increase in order volume share in 4Q22, climbing from 26% to 33% quarter-over-quarter among known region sales.
+
 
 <b>Shipping times</b>
 - iphone and bose have latest day to ship to the customer,the aveage of those product shipday are 6 days. unlikeyly airpod 3.5days
-- iPhones and Bose headphones have, relative to all other products, incredibly high variability when it comes to shipping times. One might wonder if this is a chicken and egg situation, considering their sales. Are the shipping times for iPhones and Bose headphones all over the place because we rarely sell them (and consequently don't have much stock on hand)? Or do we rarely sell iPhones and Bose headphones because customers find our shipping times to be too unpredictable?  
+- Shipping times for iPhones and Bose headphones show significant variability compared to other products.
+- This raises a critical question: Are longer and unpredictable shipping times for iPhones and Bose headphones due to lower stock availability because of low sales? Or do lower sales result from customers avoiding products with unpredictable shipping times? This is an area worth deeper analysis.
 
 
 
@@ -296,7 +288,7 @@ A copy of my Tableau workbook can be found [here](https://public.tableau.com/app
 
 <a id='section_5'></a>
 
-You can find more detailed analysis in [this downloadable Excel workbook](https://github.com/sean-atkinson/elist_ecommerce_analysis/blob/main/excel/elist_orders_case_study.xlsx).
+You can find more detailed analysis in [this downloadable Excel workbook](https://github.com/ICEICEICE991/elist-ecommence/tree/main/Excel).
 
 <a id='section_3'></a>
 # Part 4: Recommendations & Next Steps
